@@ -3,13 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/normalize.css">
-    <link rel="stylesheet" href="static/css/skeleton.css">
     <title>Database Template</title>
 </head>
 <body>
     <h1>Welcome to the Database Tutorial</h1>
     <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{url_for('database_1.db_1_form')}}">DB 1</a>
     <a href="{{url_for('database_2.db_2_form')}}">DB 2</a>
 
     {% block content %}

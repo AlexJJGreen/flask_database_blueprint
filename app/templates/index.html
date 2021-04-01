@@ -2,8 +2,11 @@
 
 {% block content %}
 <!-- enter a red block for db1 -->
+    {% for comment in db_1_comments %}
+        <p style="color: crimson;">{{comment.comment}}</p>
+    {% endfor %}
 <!-- enter a red block for db2 -->
     {% for comment in db_2_comments %}
-        <p>{{comment.comment}}</p>
+        <p style="color: cornflowerblue;">{{comment.comment}}</p>
     {% endfor %}
 {% endblock %}
