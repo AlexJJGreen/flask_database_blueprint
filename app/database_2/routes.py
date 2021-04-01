@@ -10,7 +10,7 @@ def db_2_form():
         comment = Comment_Model(comment=form.comment.data)
         db.session.add(Comment_Model)
         db.session.commit()
-        return redirect(url_for("index"))
+        return redirect(url_for("/index"))
     return render_template("form.html", form=form)
 
         

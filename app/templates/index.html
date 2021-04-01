@@ -1,6 +1,11 @@
-{extends "base.html"}
+{% extends "base.html" %}
 
 {% block content %}
 <!-- enter a red block for db1 -->
 <!-- enter a red block for db2 -->
+    {% if db_2_comments %}
+        {% for comment in db_2_comments %}
+        <p>{{comment}}</p>
+        {% endfor %}
+    {% endif %}
 {% endblock %}

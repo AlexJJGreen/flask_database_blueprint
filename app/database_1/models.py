@@ -1,1 +1,0 @@
-from <APP> import <NAME_OF_DB>
