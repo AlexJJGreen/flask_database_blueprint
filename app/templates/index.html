@@ -3,9 +3,7 @@
 {% block content %}
 <!-- enter a red block for db1 -->
 <!-- enter a red block for db2 -->
-    {% if db_2_comments %}
-        {% for comment in db_2_comments %}
-        <p>{{comment}}</p>
-        {% endfor %}
-    {% endif %}
+    {% for comment in db_2_comments %}
+        <p>{{comment.comment}}</p>
+    {% endfor %}
 {% endblock %}
